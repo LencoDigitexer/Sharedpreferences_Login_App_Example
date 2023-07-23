@@ -2,6 +2,7 @@ package com.lencodigitexer.sharedpreferences_login_app_example;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -66,6 +67,11 @@ public class HomeActivity extends AppCompatActivity {
 
                 // Завершаем текущую активити (экран) и возвращаемся назад
                 finish();
+
+                // Переходим
+                // на экран HomeActivity
+                Intent intent = new Intent(HomeActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }
