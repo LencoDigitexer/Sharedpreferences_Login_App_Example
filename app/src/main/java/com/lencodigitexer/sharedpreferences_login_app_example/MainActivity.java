@@ -46,30 +46,30 @@ public class MainActivity extends AppCompatActivity {
             editText_name = findViewById(R.id.edittext_name);
             editText_email = findViewById(R.id.edittext_email);
             button_save = findViewById(R.id.button_save);
+
+            // Добавляем обработчик клика на кнопку "Сохранить"
+            button_save.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    // Получаем редактор SharedPreferences для внесения изменений
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+
+                    // Сохраняем введенные имя и email в SharedPreferences
+                    editor.putString(KEY_NAME, editText_name.getText().toString());
+                    editor.putString(KEY_EMAIL, editText_email.getText().toString());
+
+                    // Применяем изменения
+                    editor.apply();
+
+                    // Переходим на экран HomeActivity
+                    Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                    startActivity(intent);
+
+                    // Выводим всплывающее уведомление об успешной авторизации
+                    Toast.makeText(MainActivity.this, "Успешная авторизация", Toast.LENGTH_SHORT).show();
+                }
+            });
         }
-
-        // Добавляем обработчик клика на кнопку "Сохранить"
-        button_save.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                // Получаем редактор SharedPreferences для внесения изменений
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-
-                // Сохраняем введенные имя и email в SharedPreferences
-                editor.putString(KEY_NAME, editText_name.getText().toString());
-                editor.putString(KEY_EMAIL, editText_email.getText().toString());
-
-                // Применяем изменения
-                editor.apply();
-
-                // Переходим на экран HomeActivity
-                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
-                startActivity(intent);
-
-                // Выводим всплывающее уведомление об успешной авторизации
-                Toast.makeText(MainActivity.this, "Успешная авторизация", Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 }
