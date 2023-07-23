@@ -17,7 +17,7 @@
 - Toast: Для отображения уведомлений об успешной авторизации и выходе из аккаунта.
 
 ## Демо
-
+https://github.com/LencoDigitexer/Sharedpreferences_Login_App_Example/assets/44779327/d76dcffd-eefe-46f3-a545-debd16e19df3
 
 ## Пример кода
 
