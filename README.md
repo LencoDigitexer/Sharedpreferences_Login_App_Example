@@ -1,11 +1,19 @@
 # Приложение для авторизации на Android с использованием SharedPreferences
 
+[![GitHub license](https://img.shields.io/github/license/LencoDigitexer/Sharedpreferences_Login_App_Example)](https://github.com/LencoDigitexer/Sharedpreferences_Login_App_Example/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/LencoDigitexer/Sharedpreferences_Login_App_Example.svg)](https://github.com/LencoDigitexer/Sharedpreferences_Login_App_Example/releases/)
+[![GitHub stars](https://img.shields.io/github/stars/LencoDigitexer/Sharedpreferences_Login_App_Example.svg)](https://github.com/LencoDigitexer/Sharedpreferences_Login_App_Example/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/LencoDigitexer/Sharedpreferences_Login_App_Example.svg)](https://github.com/LencoDigitexer/Sharedpreferences_Login_App_Example/issues)
+[![GitHub forks](https://img.shields.io/github/forks/LencoDigitexer/Sharedpreferences_Login_App_Example.svg)](https://github.com/LencoDigitexer/Sharedpreferences_Login_App_Example/network)
+[![GitHub contributors](https://img.shields.io/github/contributors/LencoDigitexer/Sharedpreferences_Login_App_Example.svg)](https://github.com/LencoDigitexer/Sharedpreferences_Login_App_Example/graphs/contributors)
+
 Это пример простого приложения для авторизации на платформе Android, использующего технологию SharedPreferences для сохранения данных пользователя.
 Это необходимо для того, чтобы при повторном запуске приложения не надо вводить данные заново. В данном примере пользователь вводит данные авторизации только один раз при первом запуске приложения. Далее, после успешной авторизации, приложение запускается с экрана личного кабинета пользователя, минуя окно авторизации.
 
 ## Описание
 
 Приложение состоит из двух экранов:
+
 1. Экран авторизации (MainActivity): Здесь пользователь вводит свое имя и электронную почту. После успешной авторизации данные сохраняются с помощью SharedPreferences.
 2. Экран профиля (HomeActivity): На этом экране отображаются сохраненные имя и электронная почта. Пользователь может также выйти из аккаунта, и данные будут удалены из SharedPreferences.
 
@@ -17,7 +25,7 @@
 - Toast: Для отображения уведомлений об успешной авторизации и выходе из аккаунта.
 
 ## Демо
-https://github.com/LencoDigitexer/Sharedpreferences_Login_App_Example/assets/44779327/02ac560c-b33e-4b64-8e7d-41891a819d97
+<https://github.com/LencoDigitexer/Sharedpreferences_Login_App_Example/assets/44779327/02ac560c-b33e-4b64-8e7d-41891a819d97>
 
 ## Пример кода
 
